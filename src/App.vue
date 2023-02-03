@@ -1,15 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
+    <SideBar></SideBar>
+    <router-view></router-view>
+<!--    <HomeComponent></HomeComponent>-->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+// import HomeComponent from "@/components/HomeComponent";
+import SideBar from "@/components/SideBar";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
+    //   HomeComponent,
+      SideBar
   }
 }
 </script>
@@ -23,4 +29,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+side-bar {
+
+}
+
 </style>
